@@ -29,5 +29,5 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "guarded-scrubland-63535" #Must be unique in Heroku
+          heroku_app_name: "phodal"
           heroku_email: "gmszone@qq.com"
