@@ -30,7 +30,13 @@ https://docs.github.com/en/get-started/quickstart/create-a-repo
 - enable auto deploy
   ![](images/enable_auto_deploy.png)
 
-### Start the heroku console from the terminal
+### Generate Token to HEROKU_API_KEY
+
+#### with Web
+
+[https://dashboard.heroku.com/account/applications/authorizations/new](https://dashboard.heroku.com/account/applications/authorizations/new)
+
+#### or with CLI
 
 - [install heroku](https://devcenter.heroku.com/articles/heroku-cli)
 - login heroku
@@ -56,7 +62,9 @@ Token:       xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 Updated at:  Fri Aug 05 2022 10:34:53 GMT+0800 (China Standard Time) (less than a minute ago)
 ```
 
-copy `Token` value to GitHub [Actions secrets](https://github.com/phodal/github-action-heroku/settings/secrets/actions) (replace `phodal/github-action-heroku` to your own repository name)
+### Config to GitHub secrets 
+
+copy `Token` value to GitHub [https://github.com/phodal/github-action-heroku/settings/secrets/actions] (replace `phodal/github-action-heroku` to your own repository name)
 
 ![Secrets Heroku](images/secrets-heroku.png)
 
