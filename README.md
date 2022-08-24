@@ -75,3 +75,22 @@ like: `HEROKU_API_KEY` (should be same with GitHub Actions config)
 * Copy GitHub Actions CI/CD config from [.github/workflows]
 
 > contact: please feel free contact me if you meet any questions or have any concerns.
+
+## Other Config
+
+### update application `Application`
+
+When you create your bootstartp Application, also need to change config in [build.gradle](./build.gradle), like:
+
+```diff
+jar {
+	classifier = ''
+	enabled = false
+	manifest {
+		attributes(
+-				'Main-Class': 'com.thoughtworks.training.HerokuApplication'
++				'Main-Class': 'com.phodal.demo.MovieApplication'
+		)
+	}
+}
+```
