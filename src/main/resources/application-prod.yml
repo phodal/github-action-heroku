@@ -13,6 +13,3 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none # disable DB schema creation from entity
-
-  thymeleaf:
-    mode: HTML
